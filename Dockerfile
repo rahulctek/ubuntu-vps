@@ -122,8 +122,7 @@ RUN rm -rf /etc/apt/sources.list && \
 #PowerShell
 	wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -P /tmp && \
 	apt install -y /tmp/packages-microsoft-prod.deb && \
-	apt update && \
-	apt-get install -y powershell
+	
 
 ENTRYPOINT ["supervisord", "-c"]
 
